@@ -1,0 +1,23 @@
+{
+  "name": "project14",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch scss -o css"
+  },
+  "author": "Nazariy",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^8.3.23"
+  },
+  "description": ""
+}

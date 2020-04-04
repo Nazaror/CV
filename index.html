@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>СV</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href=" " type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="#pi" class="header__link">Личная информация</a></li>
+                    <li><a href="#experience" class="header__link">Опыт</a></li>
+                    <li><a href="#js" class="header__link">JavaScript</a></li>
+                    <li><a href="#about" class="header__link">О себе</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="hero__title">Анкета</div>
+        </div>
+    </div>
+</section>
+<section id="pi" class="info">
+    <div class="container">
+        <div class="row">
+            <div class="info__logo"><img src="img/info__icon.svg" alt="something goes wrong"></div>
+            <div class="info__title">Личная информация</div>
+            <form class="info__form">
+                <div class="info__item">
+                    <input value="Орлецкий Назарий Валерьевич" type="text" id="person-name" placeholder="ФИО">
+                    <label for="person-name">ФИО</label>
+                </div>
+                <div class="info__item">
+                    <select id="year" size="1">
+                        <option class="" disabled value="1" selected>Год рождения</option>
+                    </select>
+                </div>
+                <div class="info__item">
+                    <input type="text" id="city" value="Украина г.Ивано-Франковск" placeholder="Место проживания">
+                    <label for="city">Место проживания</label>
+                </div>
+                <div class="info__item">
+                    <input type="text" id="skype" value="Nazaror" placeholder="skype">
+                    <label for="skype">Skype</label>
+                </div>
+                <div class="info__item">
+                    <input type="email" id="email" placeholder="E-mail" value="nazarorif@gmai.com">
+                    <label for="email">E-mail</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="row">
+            <div class="experience__logo"><img src="img/experience__logo.svg" alt="something goes wrong"></div>
+            <div class="experience__title">Расскажите о своем опыте</div>
+
+            <div class="experience__form">
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="BEM" name="BEM"
+                                                     value="yes" checked>
+                    <label for="BEM">БЭМ/OOCSS</label></div>
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="SEM" name="SEM"
+                                                     value="yes" checked>
+                    <label for="SEM">Верстаю семантично</label></div>
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="WP" name="WP"
+                                                     value="yes" checked>
+                    <label for="WP">Webpack</label></div>
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="SASS" name="SASS"
+                                                     value="yes" checked>
+                    <label for="SASS">Stylus/LESS/SASS</label></div>
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="ES" name="ES"
+                                                     value="yes" checked>
+                    <label for="ES">ES2015/ES2016</label></div>
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="JQ" name="JQ"
+                                                     value="yes" checked>
+                    <label for="JQ">jQuery</label></div>
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="SVG" name="SVG"
+                                                     value="yes" checked>
+                    <label for="SVG">Работаю с SVG</label></div>
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="Gulp" name="Gulp"
+                                                     value="yes">
+                    <label for="Gulp">Gulp/GRUNT</label></div>
+                <div class="experience__item"><input type="checkbox" class="experience__checkbox" id="GIT" name="GIT"
+                                                     value="yes" checked>
+                    <label for="BEM">Ипользую Git</label></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="js" class="skill">
+    <div class="container">
+        <div class="row">
+            <div class="skill__logo"><img src="img/skill__logo.svg" alt="something goes wrong"></div>
+            <div class="skill__title">Уровень владения JavaScript</div>
+            <div class="skill__range">
+                <div class="skill__none">Не владею</div>
+                <div class="skill__ready">Использую готовые решения</div>
+                <div class="skill__edit">Использую готовые решения и умею и переделывать</div>
+                <div class="skill__god">Пишу сложный JS с нуля</div>
+                <div class="slider">
+                </div>
+                <input type="hidden" class="range" value="0"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about__logo"><img src="img/about__icon.svg" alt="something goes wrong"></div>
+            <div class="about__title">Личная информация</div>
+            <div class="about__description">Напишите несколько предложений, чем привлекла наша вакансия
+                и что вы ожидаете от работы у нас
+            </div>
+            <div class="about__text">
+                <textarea placeholder="Понравилась тем, что..."></textarea>
+            </div>
+            <div class="about__button">
+                <button type="submit">Готово</button>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jQuery.js"></script>
+
+</html>
